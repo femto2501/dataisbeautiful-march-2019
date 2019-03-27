@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Data is Beautiful - March 2019</title>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <main>
+
+  <input id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1">Meta Data</label>
+
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2">Temperature</label>
+
+  <input id="tab3" type="radio" name="tabs">
+  <label for="tab3">Wind Speed</label>
+
+  <input id="tab4" type="radio" name="tabs">
+  <label for="tab4">Humidity</label>
+  
+  <input id="tab5" type="radio" name="tabs">
+  <label for="tab5">Sky Cover</label>
+
+  <section id="content1">
+    <p>
+	   This is my submission for March 2019 - r/dataisbeautiful. Data - <a href="http://rredc.nrel.gov/solar/old_data/nsrdb/1991-2005/tmy3/"> National Solar Radiation Data Base</a>
+    </p>
+	<img src="1.png" alt="Stations - State vs Count" style="width:100%;height:width*538/1345">
+	<p>
+      The above bar graph shows the count of Station in each State, and their Class. Rhode Island, Virgin Islands, Guam and Delaware have the fewest stations. 
+    </p>
+	<img src="2.png" alt="Beeswarm - State vs Year" style="width:100%;height:width*538/1345">
+	<p>
+      The data consists of multiple datasets from each station from 1975 to 2005. The data is incomplete and each dataset consists of  12 months of data distributed over various years. The above beeswarm shows the dataset available for each State and Year/Month. There is a missing gap between 1983-1985, and 1992-1994. Majority of Class III datasets are located above 1995.
+    </p>
+	<img src="3.png" alt="Class - Density Stack vs Year" style="padding:0.5%;width:49.5%;height:width*400/700">
+	<img src="4.png" alt="Class - Density Fill vs Year" style="padding:0.5%;width:49.5%;height:width*400/700">
+	<p>
+      The above two density graphs shows the density of Dataset as year progress, and their Class. Between 1975 to 1990 most of the dataset comes from Class I stations, While dataset above 1995 consists mostly of Class II and Class III. The two gaps in dataset can also be seen in this graph.
+    </p>
+  </section>
+
+  <section id="content2">
+    <p>
+      Below animations show Dry Bulb Temperature and Dew Point Temperature. The dry-bulb temperature is the temperature of air measured by a thermometer freely exposed to the air but shielded from radiation and moisture. The dew point is the temperature to which air must be cooled to become saturated with water vapor.
+    </p>
+	<img src="drybulbtemp.gif" alt="Dry Bulb Temp- USA Map - Animation" style="width:100%;height:width*1200/1452">
+	<img src="dbtbar.gif" alt="Dry Bulb Temp - Bar Graph - Animation" style="width:100%;height:width*400/700">
+    <p>
+      Above animations shows Dry Bulb Temperature (*C) for each month animated over 1995 to 2005, and the mean(bar) and median(dash) dry bulb temperature over the years 1995 to 2005. Black states denote data unavailable. December, January, and February being the coldest month while May, June, July being the hottest. Effects of Global warming can be seen in as less and less states average negative temperature in later years.
+    </p>
+	<img src="dewpointtemp.gif" alt="Dew Point Temp - USA Map - Animation" style="width:100%;height:width*1200/1452">
+	<img src="dptbar.gif" alt="Dew Point Temp- Bar Graph - Animation" style="width:100%;height:width*400/700">
+	<p>
+      Above animations shows Dew Point Temperature (*C) for each month animated over 1995 to 2005, and the mean(bar) and median(dash) dew bulb temperature over the years 1995 to 2005. Black states denote data unavailable. Southern states are hotter than Northern states. Guam, Hawaii, Puerto Rico, Virgin Islands are the hottest states.
+    </p>
+  </section>
+
+  <section id="content3">
+    <p>
+		Wind Speed is expressed as meters per second. 
+    </p>
+	<img src="windspeed.gif" alt="Wind Speed - USA Map - Animation" style="width:100%;height:width*1200/1452">
+	<p>
+      Above animation shows Wind Speed for each month animated over 1995 to 2005. Black states denote data unavailable. New Hampshire, February 2002 is the windiest month by a wide margin. 
+    </p>
+	<img src="wsbar.gif" alt="Wind Speed - Bar Graph - Animation" style="width:100%;height:width*400/700">
+    <p>
+		Above animation shows the mean(bar) and median(dash) wind speed over the years 1995 to 2005. Wind Speed of most States average between 2.5 to 5 meter per second. New Hampshire has highest average wind speed, at 9 meters per second on 1996.
+    </p>
+  </section>
+
+  <section id="content4">
+    <p>
+      Relative Humidity is expressed as a percentage; a higher percentage means that the air–water mixture is more humid. At 100% relative humidity, the air is saturated and is at its dew point.  
+    </p>
+    <img src="rhum.gif" alt="Relative Humidity - USA Map - Animation" style="width:100%;height:width*1200/1452">
+    <p>
+      Above animation shows relative humidity for each month animated over 1995 to 2005. Black states denote data unavailable.
+    </p>
+	<img src="rhumbar.gif" alt="Relative Humidity - Bar Graph - Animation" style="width:100%;height:width*400/700">
+	<p>
+      Above animation shows the mean(bar) and median(dash) relative humidity over the years 1995 to 2005. Relative Humidity of most States hover around 75%. Relative Humidity of Arizona, New York, Wyoming, Utah hover around 50%.
+    </p>
+  </section>
+  
+  <section id="content5">
+    <p>
+      Sky Cover is calculated as <b>total sky cover + (opaque sky cover/2)</b>. Total Sky cover and Opaque sky cover are each measured in 1/10th.
+    </p>
+	<img src="skycover.gif" alt="Sky Cover - USA Map - Animation" style="width:100%;height:width*1200/1452">
+	 <p>
+      Above animation shows sky cover for each month animated over 1995 to 2005. Black states denote data unavailable. 
+    </p>
+	<img src="scbar.gif" alt="Sky Cover - Bar Graph - Animation" style="width:100%;height:width*400/700">
+	<p>
+      Above animation shows the mean(bar) and median(dash) sky cover over the years 1995 to 2005. 1999 Guam has the highest sky cover.
+    </p>
+  </section>
+
+</main>
+</body>
+</html>
